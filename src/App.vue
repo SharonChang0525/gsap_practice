@@ -18,10 +18,6 @@ const day2Section = ref(null)
 const day2Subtitle = ref('Animation triggers when this section enters the viewport.')
 const day2SubtitleRef = ref(null)
 
-useFromBottomReveal(day2Section, day2SubtitleRef,{
-  start: 'top 70%',
-  duration: 0.7,
-  ease: 'power2.out'
-})
+useFromBottomReveal(day2Section, day2SubtitleRef,{})
 
 </script>
