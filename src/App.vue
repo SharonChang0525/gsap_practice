@@ -22,9 +22,7 @@ useBackgroundTransition(appStage, {
   sectionSelector: '.page',
   colorVarPrefix: '--theme-day-',
   colorCount: 5,
-  targetVar: '--page-bg',
-  start: 'top 80%',
-  end: 'top 20%'
+  targetVar: '--page-bg'
 })
 
 </script>
