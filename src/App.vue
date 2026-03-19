@@ -24,8 +24,7 @@ const headline = ref(null)
 const day2Section = ref(null)
 
 useFlipText(headline, displayText, {
-  firstText: 'Day 1 Playing GSAP!',
-  secondText: '第一天玩 GSAP!'
+  texts: ['Day 1 Playing GSAP!', '第一天玩 GSAP!']
 })
 
 onMounted(() => {
