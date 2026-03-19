@@ -1,12 +1,11 @@
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { onMounted, onBeforeUnmount } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export function useFromBottomReveal(sectionRef, options = {}) {
+export function useFromBottomReveal(sectionRef, targetRef, options = {}) {
   const {
-    text = 'text',
     start = 'top 70%',
     toggleActions = 'play none none reverse',
     y = 40,
@@ -14,14 +13,12 @@ export function useFromBottomReveal(sectionRef, options = {}) {
     ease = 'power2.out'
   } = options
 
-  const textValue = ref(text)
-  const textRef = ref(null)
   let tl = null
 
   onMounted(() => {
-    if (!sectionRef.value || !textRef.value) return
+    if (!sectionRef.value || !targetRef.value) return
 
-    gsap.set(textRef.value, { opacity: 0, y })
+    gsap.set(targetRef.value, { opacity: 0, y })
 
     tl = gsap.timeline({
       scrollTrigger: {
@@ -31,7 +28,7 @@ export function useFromBottomReveal(sectionRef, options = {}) {
       }
     })
 
-    tl.to(textRef.value, {
+    tl.to(targetRef.value, {
       opacity: 1,
       y: 0,
       duration,
@@ -43,9 +40,4 @@ export function useFromBottomReveal(sectionRef, options = {}) {
     tl?.scrollTrigger?.kill()
     tl?.kill()
   })
-
-  return {
-    textValue,
-    textRef
-  }
 }
