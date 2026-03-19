@@ -1,0 +1,35 @@
+:root {
+  font-family: 'Avenir Next', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #102a43;
+  background: radial-gradient(circle at 10% 20%, #d9f3ff, #bde0fe 45%, #f8fbff 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+  padding: 1.5rem;
+}
+
+.headline {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 5rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #0f172a;
+  text-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
