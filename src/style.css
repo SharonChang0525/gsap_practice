@@ -14,6 +14,11 @@
 body {
   margin: 0;
   min-height: 100vh;
+  background: var(--theme-day-1);
+}
+
+.app-stage {
+  background: var(--page-bg);
 }
 
 .page {
@@ -36,7 +41,6 @@ body {
 }
 
 .day-one {
-  background: var(--theme-day-1);
   color: var(--theme-day-5);
   grid-template-rows: 1fr auto;
 }
@@ -51,7 +55,6 @@ body {
 }
 
 .day-two {
-  background: var(--theme-day-2);
   color: var(--theme-day-5);
   align-content: center;
   justify-items: center;
@@ -71,16 +74,13 @@ body {
 }
 
 .day-three {
-  background: var(--theme-day-3);
   color: var(--theme-day-5);
 }
 
 .day-four {
-  background: var(--theme-day-4);
   color: var(--theme-day-1);
 }
 
 .day-five {
-  background: var(--theme-day-5);
   color: var(--theme-day-1);
 }
