@@ -16,10 +16,6 @@ body {
   min-height: 100vh;
 }
 
-.app-stage {
-  background: transparent;
-}
-
 .page {
   min-height: 100vh;
   display: grid;
