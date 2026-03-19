@@ -1,5 +1,5 @@
 <template>
-  <section class="page day-one">
+  <section class="page day-three">
     <h1 ref="headline" class="headline">{{ displayText }}</h1>
   </section>
 </template>

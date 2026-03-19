@@ -1,5 +1,5 @@
 <template>
-  <section class="page day-one">
+  <section class="page day-five">
     <h1 ref="headline" class="headline">{{ displayText }}</h1>
     <p class="scroll-hint">Day 5 complete</p>
   </section>
