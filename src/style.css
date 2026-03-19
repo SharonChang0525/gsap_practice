@@ -1,11 +1,11 @@
+@import "./styles/palette.css";
 @import "tailwindcss";
 
 :root {
   font-family: 'Avenir Next', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
-  color: #102a43;
-  background: radial-gradient(circle at 10% 20%, #d9f3ff, #bde0fe 45%, #f8fbff 100%);
+  color: var(--theme-day-5);
 }
 
 * {
@@ -15,6 +15,10 @@
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+.app-stage {
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 45%, var(--bg-end) 100%);
 }
 
 .page {
@@ -30,7 +34,7 @@ body {
   font-size: clamp(2rem, 7vw, 5rem);
   letter-spacing: 0.02em;
   text-align: center;
-  color: #0f172a;
+  color: var(--theme-day-5);
   text-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
   transform-style: preserve-3d;
   will-change: transform, opacity;
@@ -44,13 +48,12 @@ body {
   margin: 0 0 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #1d4e89;
+  color: var(--theme-day-4);
   font-size: 0.92rem;
 }
 
 .day-two {
-  background: linear-gradient(135deg, #07203f 0%, #144272 45%, #2c74b3 100%);
-  color: #f8fbff;
+  color: var(--theme-day-5);
   align-content: center;
   justify-items: center;
   text-align: center;

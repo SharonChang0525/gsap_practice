@@ -1,0 +1,13 @@
+:root {
+  /* The Perfect Night Sky palette (Day 1 -> Day 5)
+     Source: https://www.color-hex.com/color-palette/67216 */
+  --theme-day-1: #203060;
+  --theme-day-2: #584880;
+  --theme-day-3: #885090;
+  --theme-day-4: #f880b0;
+  --theme-day-5: #f8c0d8;
+
+  --bg-start: var(--theme-day-1);
+  --bg-mid: var(--theme-day-2);
+  --bg-end: var(--theme-day-3);
+}
